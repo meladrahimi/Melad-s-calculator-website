@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins" ,sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    background-color: #38b4d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(rgb(17, 0, 255),);
+    position: relative;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.calculator form input{
+    border: ;
+    outline: ;
+    width: 70px;
+    height: 70px;
+    border-radius: 9px;   
+    background: transparent;
+    font-size: 40px;
+    color:#f0e9e9;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+/* form input.equal{
+    
+} */
+
+form input.operator{
+    color: #33ffd8;
+}
+
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+    
+    color: rgb(0, 255, 21);
+
+  
+    text-decoration: none;
+    
+
+    
+    transition: color 0.3s;
+}
+
+/* Define a hover effect */
+a:hover {
+    /* Change text color to blue when hovering over the link */
+    color: rgb(0, 47, 255);
+}
+
+
