@@ -17,20 +17,20 @@
         * {box-sizing: border-box}
         body {font-family: Verdana, sans-serif; margin:0}
         
-        /* Slideshow container */
+       
         .slideshow-container {
           position: relative;
           background: #50bedaf1;
         }
         
-        /* Slides */
+        
         .mySlides {
           display: none;
           padding: 80px;
           text-align: center;
         }
         
-        /* Next & previous buttons */
+       
         .prev, .next {
           cursor: pointer;
           position: absolute;
@@ -45,28 +45,28 @@
           user-select: none;
         }
         
-        /* Position the "next button" to the right */
+        
         .next {
           position: absolute;
           right: 0;
           border-radius: 3px 0 0 3px;
         }
         
-        /* On hover, add a black background color with a little bit see-through */
+        
         .prev:hover, .next:hover {
           background-color: rgba(0,0,0,0.8);
           color: white;
         
         }
         
-        /* The dot/bullet/indicator container */
+       
         .dot-container {
             text-align: center;
             padding: 20px;
             background: #ddd;
         }
         
-        /* The dots/bullets/indicators */
+        
         .dot {
           cursor: pointer;
           height: 15px;
@@ -78,15 +78,15 @@
           transition: background-color 0.6s ease;
         }
         
-        /* Add a background color to the active dot/circle */
+        
         .active, .dot:hover {
           background-color: #050404;
         }
         
-        /* Add an italic font style to all quotes */
+        
         q {font-style: italic;}
         
-        /* Add a blue color to the author */
+        
         .author {color: rgb(28, 17, 192);}
         </style>
         </head>
@@ -210,18 +210,18 @@
       min-width: 250px;
     }
     
-    /* Include the padding and border in an element's total width and height */
+    
     * {
       box-sizing: border-box;
     }
     
-    /* Remove margins and padding from the list */
+    
     ul {
       margin: 0;
       padding: 0;
     }
     
-    /* Style the list items */
+    
     ul li {
       cursor: pointer;
       position: relative;
@@ -231,31 +231,31 @@
       font-size: 18px;
       transition: 0.2s;
       
-      /* make the list items unselectable */
+      
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
     }
     
-    /* Set all odd list items to a different color (zebra-stripes) */
+    
     ul li:nth-child(odd) {
       background: #f9f9f9;
     }
     
-    /* Darker background-color on hover */
+    
     ul li:hover {
       background: #ddd;
     }
     
-    /* When clicked on, add a background color and strike out text */
+    
     ul li.checked {
       background: #888;
       color: #fff;
       text-decoration: line-through;
     }
     
-    /* Add a "checked" mark when clicked on */
+    
     ul li.checked::before {
       content: '';
       position: absolute;
@@ -269,7 +269,7 @@
       width: 7px;
     }
     
-    /* Style the close button */
+   
     .close {
       position: absolute;
       right: 0;
@@ -282,7 +282,7 @@
       color: white;
     }
     
-    /* Style the header */
+    
     .header {
       background-color: #0c4358;
       padding: 30px 40px;
@@ -290,14 +290,14 @@
       text-align: center;
     }
     
-    /* Clear floats after the header */
+    
     .header:after {
       content: "";
       display: table;
       clear: both;
     }
     
-    /* Style the input */
+   
     input {
       margin: 0;
       border: none;
@@ -308,7 +308,7 @@
       font-size: 16px;
     }
     
-    /* Style the "Add" button */
+    
     .addBtn {
       padding: 10px;
       width: 25%;
@@ -347,7 +347,7 @@
     </ul>
     
     <script>
-    // Create a "close" button and append it to each list item
+    
     var myNodelist = document.getElementsByTagName("LI");
     var i;
     for (i = 0; i < myNodelist.length; i++) {
@@ -358,7 +358,7 @@
       myNodelist[i].appendChild(span);
     }
     
-    // Click on a close button to hide the current list item
+    
     var close = document.getElementsByClassName("close");
     var i;
     for (i = 0; i < close.length; i++) {
@@ -368,7 +368,7 @@
       }
     }
     
-    // Add a "checked" symbol when clicking on a list item
+    
     var list = document.querySelector('ul');
     list.addEventListener('click', function(ev) {
       if (ev.target.tagName === 'LI') {
@@ -376,7 +376,7 @@
       }
     }, false);
     
-    // Create a new list item when clicking on the "Add" button
+    
     function newElement() {
       var li = document.createElement("li");
       var inputValue = document.getElementById("myInput").value;
