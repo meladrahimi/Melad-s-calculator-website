@@ -80,9 +80,9 @@ a {
     transition: color 0.3s;
 }
 
-/* Define a hover effect */
+
 a:hover {
-    /* Change text color to blue when hovering over the link */
+   
     color: rgb(0, 47, 255);
 }
 
